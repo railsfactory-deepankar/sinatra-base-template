@@ -1,0 +1,37 @@
+<% @names.each do |name| %>
+
+<%=name %> <br/>
+
+<% end %>
+<br/>
+
+
+<% @names.each_with_index do |name,id| %>
+<% id2 = id + 1%>
+
+<a href=""><%=name %></a> &nbsp; &nbsp;  &nbsp; &nbsp;  <a href="/edit/<%=id2%>">edit</a> | <a href="/delete/<%=id2%>">delete</a> | <a href="/complete/<%=id2%>">mark as completed</a> <br/>
+
+<% end %>
+
+<br/>
+
+<ul>
+<% @names.each do |name| %>
+
+<li><%=name %> </li>
+
+<% end %>
+</ul>
+<br/>
+
+
+<form>
+<select>
+<% @names.each do |name| %>
+
+<option><%=name %></option> 
+
+<% end %>
+
+</select>
+</end>

@@ -1,0 +1,14 @@
+<html>
+<head>Delete</head>
+<body>
+<form action="/delete" method="post">
+<input type="text" name="item2">
+<input type=submit name ="delete" value="delete">
+</form>
+<ul>
+<% @tasks.each do|item| %>
+<li><%=item %></li>
+<% end %>
+</ul>
+</body>
+</html>

@@ -1,20 +1,12 @@
 <html>
-<head>
-</head>	
-<body>
-	
-	<a href='/'> home </a> &nbsp;  
-	<% if session[:username]%>
-	<a href='/member'> member </a> &nbsp; 
-	
-	<a href='/logout'> logout </a>
-	<% else %>
-	<a href='/login'> login </a> &nbsp;
-	<%end %>
-	 &nbsp; <a href='/erb_example'> ERB Example </a> <br/> 
-	
-	<%=session[:username]%><br/>
-	
+<head>ITEMS TO DO</head>	
+<body bgcolor="gray">
+ 	<br>
+	<a href='/'>Add items</a> &nbsp
+	<a href='/complete'>Mark task as done</a> &nbsp;
+	<a href='/completed'>Show completed tasks</a> &nbsp;
+	<a href='/pending'>Show pending tasks</a> &nbsp;
+	<a href='/delete'>Delete a task</a><br/>
 <%=yield %>
 </body>
 </html>
