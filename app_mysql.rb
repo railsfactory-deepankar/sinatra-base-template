@@ -11,7 +11,6 @@ end
 enable :sessions
 set :session_secret, 'randomesecretkey112324'
 
-# root page
 get '/' do
 erb :add
 end  
